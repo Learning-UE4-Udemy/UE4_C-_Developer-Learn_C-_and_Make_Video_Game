@@ -79,3 +79,4 @@ DerivedDataCache/*
 # Exclude folders
 01_Section-Introduction_and_Setup/Lessons/*
 
+02_Section-Triple_X-Write_Pure_C++/Lessons/*
