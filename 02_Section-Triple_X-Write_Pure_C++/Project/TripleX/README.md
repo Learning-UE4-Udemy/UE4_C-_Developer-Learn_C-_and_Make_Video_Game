@@ -8,11 +8,8 @@ cl triplex.cpp /EHsc
 
 triplex.exe
 
+std - стандартное пространство имён
 std::cout << std::endl;
-
-
-
-
 
 
 # Details
@@ -46,3 +43,11 @@ Tests: 3
 Source: 
 
 https://www.udemy.com/course/unrealcourse/
+
+
+# Notes
+
+Когда мы объявляем переменную,
+мы зарезервировали место в памяти компьютера для этого.
+
+

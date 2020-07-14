@@ -76,7 +76,8 @@ DerivedDataCache/*
 
 # Exclude files
 #*.pdf
-
+01_Section-Introduction_and_Setup/*.pdf
+02_Section-Triple_X-Write_Pure_C++/*.pdf
 # Exclude folders
 01_Section-Introduction_and_Setup/Lessons/*
 
