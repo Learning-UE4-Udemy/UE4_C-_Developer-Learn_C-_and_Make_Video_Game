@@ -78,6 +78,7 @@ DerivedDataCache/*
 #*.pdf
 01_Section-Introduction_and_Setup/*.pdf
 02_Section-Triple_X-Write_Pure_C++/*.pdf
+02_Section-Triple_X-Write_Pure_C++/*.docx
 # Exclude folders
 01_Section-Introduction_and_Setup/Lessons/*
 
