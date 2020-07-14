@@ -1,7 +1,18 @@
 # 02_Section-Triple_X-Write_Pure_C++
 
+
 # About this project
 cl triplex.cpp
+
+cl triplex.cpp /EHsc
+
+triplex.exe
+
+std::cout << std::endl;
+
+
+
+
 
 
 # Details
