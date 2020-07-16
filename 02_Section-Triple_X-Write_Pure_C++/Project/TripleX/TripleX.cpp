@@ -23,10 +23,21 @@ int main()
     std::cout << "+ There are 3 numbers in the code" << std::endl;
     std::cout << "+ The codes add-up to: " << CodeSum << std::endl;
     std::cout << "+ The codes multiply to give: " << CodeProduct << std::endl;
+
+    // Declare 3 number Guess
+    int GuessA, GuessB, GuessC;
+    
+    std::cin >> GuessA;
+    std::cin >> GuessB;
+    std::cin >> GuessC;
+   
+    const int GuessSum = GuessA + GuessB + GuessC;
+    const int GuessProduct = GuessA * GuessB * GuessC;
+
+    std::cout << std::endl;
+    std::cout << "GuessSum : " << GuessSum << std::endl;
+    std::cout << "GuessProduct : " << GuessProduct << std::endl;
+
     std::cout << "============================================================" << std::endl;
-
-
-    int PlayerGuess;
-
     return 0;
 }

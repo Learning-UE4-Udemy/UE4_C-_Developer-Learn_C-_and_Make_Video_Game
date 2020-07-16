@@ -2,14 +2,20 @@
 
 
 # About this project
+
+<!-- Terminal -->
 cl triplex.cpp
-
 cl triplex.cpp /EHsc
-
 triplex.exe
 
+<!-- Code -->
 std - стандартное пространство имён
+
+cout - character out
 std::cout << std::endl;
+
+cin - character in
+std::cin PLayerGuess
 
 
 # Details
@@ -65,4 +71,5 @@ https://www.udemy.com/course/unrealcourse/
 Ключевые слова зарезервированы для использования только языком C++ !
 И есть более 90 ключевых слов в C++, которые зарезервированы.
 
+<!-- Пользовательский ввод в терминал -->
 
