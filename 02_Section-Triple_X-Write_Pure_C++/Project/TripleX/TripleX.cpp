@@ -26,17 +26,29 @@ int main()
 
     // Declare 3 number Guess
     int GuessA, GuessB, GuessC;
-    
+
     std::cin >> GuessA;
     std::cin >> GuessB;
     std::cin >> GuessC;
-   
+
     const int GuessSum = GuessA + GuessB + GuessC;
     const int GuessProduct = GuessA * GuessB * GuessC;
 
     std::cout << std::endl;
     std::cout << "GuessSum : " << GuessSum << std::endl;
     std::cout << "GuessProduct : " << GuessProduct << std::endl;
+
+    if (GuessSum == CodeSum && GuessProduct == CodeProduct)
+    {
+        std::cout << std::endl;
+        std::cout << "You win!" << std::endl;
+    }
+    else
+    {
+        std::cout << std::endl;
+        std::cout << "You lose!";
+    }
+    
 
     std::cout << "============================================================" << std::endl;
     return 0;
