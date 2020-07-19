@@ -38,12 +38,12 @@ bool PlayGame(int Difficulty)
     // Check if the player guess is correct
     if (GuessSum == CodeSum && GuessProduct == CodeProduct)
     {
-        std::cout << "\nYou win!";
+        std::cout << "\n***Well done agent! You have extracted a file! Keep going! ***";
         return true;
     }
     else
     {
-        std::cout << "\nYou lose!";
+        std::cout << "\n You entered the wrong code! Careful agent! Try again! ***";
         return false;
     }
 
@@ -54,8 +54,9 @@ bool PlayGame(int Difficulty)
 int main()
 {
     int LevelDifficulty = 1;
-    
-    while (true)
+    const int MaxDifficulty = 5;
+
+    while (LevelDifficulty <= MaxDifficulty) // Loop game until all levels completed
     {
         bool bLevelComplete = PlayGame(LevelDifficulty);
         std::cin.clear();  // Clears any errors
@@ -66,7 +67,9 @@ int main()
             ++LevelDifficulty;
         }
         
+        
     }
 
+    std::cout << "\n*** Great work agent! You got all the files! Now get out of there! ***\n";
     return 0;
 }
