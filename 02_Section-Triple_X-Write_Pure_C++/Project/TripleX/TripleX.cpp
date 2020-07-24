@@ -1,4 +1,5 @@
 #include <iostream>
+#include <ctime>
 
 void PrintIntroduction(int Difficulty)
 {
@@ -13,9 +14,9 @@ bool PlayGame(int Difficulty)
     PrintIntroduction(Difficulty);
 
     // Declare 3 number code
-    const int CodeA = rand() % Difficulty +1;
-    const int CodeB = rand() % Difficulty +1;
-    const int CodeC = rand() % Difficulty +1;
+    const int CodeA = rand() % Difficulty + Difficulty;
+    const int CodeB = rand() % Difficulty + Difficulty;
+    const int CodeC = rand() % Difficulty + Difficulty;
 
     const int CodeSum = CodeA + CodeB + CodeC;
     const int CodeProduct = CodeA * CodeB * CodeC;
@@ -53,6 +54,8 @@ bool PlayGame(int Difficulty)
 
 int main()
 {
+    srand(time(NULL)); // Create new rundom sequence based on time of day
+
     int LevelDifficulty = 1;
     const int MaxDifficulty = 5;
 
@@ -66,8 +69,6 @@ int main()
         {
             ++LevelDifficulty;
         }
-
-        
     }
 
     std::cout << "\n*** Great work agent! You got all the files! Now get out of there! ***\n";
