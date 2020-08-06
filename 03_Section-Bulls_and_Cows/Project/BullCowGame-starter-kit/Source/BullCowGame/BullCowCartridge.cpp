@@ -13,6 +13,6 @@ void UBullCowCartridge::BeginPlay() // When the game starts
 void UBullCowCartridge::OnInput(const FString& Input) // When the player hits enter
 {
     ClearScreen();
-
     FString HiddenWord = TEXT("cake");
+    PrintLine(Input);
 }
