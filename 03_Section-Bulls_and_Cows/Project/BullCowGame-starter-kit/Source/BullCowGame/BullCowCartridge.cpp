@@ -5,16 +5,22 @@
 void UBullCowCartridge::BeginPlay() // When the game starts
 {
     Super::BeginPlay();
-    HiddenWord = TEXT("cake");
 
+    // Welcome The Player
     PrintLine(TEXT("Welcome to Bull Cows!"));
     PrintLine(TEXT("Guess the 4 letter word!")); // Megic Number Remove!
     PrintLine(TEXT("Press enter to continue..."));
 
+    // Setting Up Game
+    HiddenWord = TEXT("cake");
+    // Set Lives
+
+    // Promt Player For Guess
 }
 
-void UBullCowCartridge::OnInput(const FString& Input) // When the player hits enter
+void UBullCowCartridge::OnInput(const FString &Input) // When the player hits enter
 {
+    // Cheking Player Guess
     ClearScreen();
 
     if (Input == HiddenWord)
@@ -25,4 +31,20 @@ void UBullCowCartridge::OnInput(const FString& Input) // When the player hits en
     {
         PrintLine(TEXT("You have Lost!"));
     }
+
+    // Check if Isogram
+    // Promt To Guess Again
+    // Check Right Number of Characters
+    // Promt To Guess Again
+
+    
+    // Delete Life
+
+    // Check if Lives > 0
+    // If Yes GuessAgain
+    // Show Lives Left
+    // If No Show GameOver and HiddenWord?
+    // Prompt To Play Agan, Press Enter To Play Again?
+    // Check User Input
+    // PlayAgain or Quit
 }
