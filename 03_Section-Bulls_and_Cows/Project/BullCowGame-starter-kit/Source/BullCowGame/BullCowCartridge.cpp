@@ -12,7 +12,7 @@ void UBullCowCartridge::BeginPlay() // When the game starts
     PrintLine(TEXT("Press enter to continue..."));
 
     // Setting Up Game
-    HiddenWord = TEXT("cake");
+    InitGame();
     // Set Lives
 
     // Promt Player For Guess
@@ -37,7 +37,6 @@ void UBullCowCartridge::OnInput(const FString &Input) // When the player hits en
     // Check Right Number of Characters
     // Promt To Guess Again
 
-    
     // Delete Life
 
     // Check if Lives > 0
@@ -47,4 +46,10 @@ void UBullCowCartridge::OnInput(const FString &Input) // When the player hits en
     // Prompt To Play Agan, Press Enter To Play Again?
     // Check User Input
     // PlayAgain or Quit
+}
+
+void UBullCowCartridge::InitGame()
+{
+    HiddenWord = TEXT("cake");
+    Lives = 5;
 }
